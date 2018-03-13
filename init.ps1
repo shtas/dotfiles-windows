@@ -56,10 +56,10 @@ Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Persona
 Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" "ConfirmFileDelete" 0
 
 # Lock screen backgrund
-Set-LockscreenWallpaper -Path "$PSScriptRoot\login.jpg"
+Set-LockscreenWallpaper -Path "$PSScriptRoot\img\login.jpg"
 
 # Wallpaper
-Set-DesktopWallpaper -NewWallpaperPath "$PSScriptRoot\wallpaper.jpg"
+Set-DesktopWallpaper -NewWallpaperPath "$PSScriptRoot\img\wallpaper.jpg"
 
 #Internet explorer
 # Set home page to `about:blank` for faster loading

@@ -12,7 +12,7 @@ function Confirm-Registry($Path) {
 # https://github.com/rkeithhill/PoshWinRT
 # https://github.com/Sauler/PowershellUtils
 function Set-LockscreenWallpaper($Path) {
-  $WinRTPath = Get-Item "$PSScriptRoot\PoshWinRT.dll"
+  $WinRTPath = Get-Item "$PSScriptRoot\wrappers\PoshWinRT.dll"
   Add-Type -Path $WinRTPath
   [Windows.Storage.StorageFile, Windows.Storage, ContentType = WindowsRuntime] > $null
   $asyncOp = [Windows.Storage.StorageFile]::GetFileFromPathAsync($Path)
