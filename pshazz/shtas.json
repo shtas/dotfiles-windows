@@ -18,5 +18,10 @@
 		"prompt_remote_push": ">",
 		"prompt_remote_pull": "<",
 		"prompt_remote_same": "="
+	},
+	"aliases": {
+		"add": {
+			"e": "explorer ."
+		}
 	}
 }
