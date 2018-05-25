@@ -5,6 +5,10 @@ $bookmarks = @{
   "home" = $env:USERPROFILE
 }
 
+if (!(Test-Path $configPath)) {
+  New-Item -Path $configPath -Type "file"
+}
+
 $existingConfig = Get-Content $configPath
 if ($existingConfig) {
   foreach ($item in $existingConfig) {
